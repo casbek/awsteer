@@ -3,7 +3,7 @@ const app = express()
 const puppeteer = require("puppeteer");
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
-const port = 9090;
+const port = 80;
 
 app.post("/", (req, res) => {
     const scrape = async () => {
